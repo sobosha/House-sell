@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/name_from_prof"
+        android:title="sabr" android:visible="false"/>
+    <item android:title="پروفایل" android:id="@+id/prof" />
+    <item android:title="آگهی های فروش" android:id="@+id/forosh_item" />
+    <item android:title="آگهی های رهن و اجاره" android:id="@+id/rent_item" />
+    <item android:title="افزودن آگهی" android:id="@+id/add_item" />
+    <item android:title="پیام ها" android:id="@+id/message_item" />
+    <item android:title="خروج" android:id="@+id/exit" />
+</menu>

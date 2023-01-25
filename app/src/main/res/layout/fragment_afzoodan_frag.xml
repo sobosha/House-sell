@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".afzoodan_frag"
+    android:padding="5dp"
+    android:layout_margin="5dp"
+    android:layoutDirection="rtl"
+    android:background="#9CFFE7">
+
+    <!-- TODO: Update blank fragment layout -->
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/Radio_group_add"
+        android:gravity="right"
+        android:orientation="horizontal"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="نوع آگهی:"
+            android:textSize="20dp"
+            android:padding="10dp"/>
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/radio_rent"
+            android:text="رهن و اجاره"/>
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/radio_sale"
+            android:text="فروش"/>
+
+    </RadioGroup>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="نام مالک"
+        android:id="@+id/et_name_afzfrag"
+        android:layout_below="@id/Radio_group_add"
+        />
+
+    <Spinner
+        android:id="@+id/spinner_area"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/et_name_afzfrag"
+        android:entries="@array/spinner"
+        />
+
+    <EditText
+        android:id="@+id/address"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:hint="آدرس ملک"
+        android:layout_below="@id/spinner_area"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="اطلاعات ملک"
+        android:id="@+id/et_info_afzfrag"
+        android:layout_below="@id/address"
+        />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="قیمت رهن"
+        android:id="@+id/et_rahn_afzfrag"
+        android:layout_below="@id/et_info_afzfrag"
+        android:visibility="gone"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="قیمت"
+        android:id="@+id/et_cost_afzfrag"
+        android:layout_below="@id/et_rahn_afzfrag"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="متراژ"
+        android:id="@+id/et_metr_afzfrag"
+        android:layout_below="@id/et_cost_afzfrag"/>
+
+    <RadioGroup
+        android:id="@+id/sanad_type"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/et_metr_afzfrag"
+        android:orientation="horizontal"
+        android:gravity="right"
+        >
+
+        <RadioButton
+            android:id="@+id/sanaddar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="سند دار"
+            android:checked="true"/>
+
+        <RadioButton
+            android:id="@+id/gholname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="قولنامه ای" />
+    </RadioGroup>
+
+    <RadioGroup
+        android:orientation="horizontal"
+        android:id="@+id/vila_type"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/sanad_type"
+        android:gravity="right"
+        >
+
+        <RadioButton
+            android:id="@+id/vila"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="ویلایی"
+            android:checked="true"/>
+
+        <RadioButton
+            android:id="@+id/aparteman"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="آپارتمانی" />
+    </RadioGroup>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="تلفن"
+        android:id="@+id/et_phone_afzfrag"
+        android:layout_below="@id/vila_type"/>
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/img_afzfrg"
+        android:layout_below="@id/et_phone_afzfrag"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btn_selectimg_afzfrag"
+        android:text="انتخاب تصویر"
+        android:layout_below="@id/img_afzfrg"
+        android:layout_centerHorizontal="true"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btn_afzfrag"
+        android:text="ثبت"
+        android:layout_below="@id/btn_selectimg_afzfrag"
+        android:layout_centerHorizontal="true"/>
+
+
+</RelativeLayout>

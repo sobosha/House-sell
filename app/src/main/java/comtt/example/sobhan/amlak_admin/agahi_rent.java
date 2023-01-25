@@ -1,0 +1,110 @@
+package comtt.example.sobhan.amlak_admin;
+import com.google.gson.annotations.SerializedName;
+public class agahi_rent {
+    @SerializedName("name")
+    private String name;
+
+    @SerializedName("info")
+    private String info;
+
+    @SerializedName("cost")
+    private String cost;
+
+    @SerializedName("phone")
+    private String phone;
+
+    @SerializedName("rahn")
+    private String rahn;
+
+    @SerializedName("metr")
+    private int metr;
+
+    @SerializedName("id")
+    private int id;
+
+    @SerializedName("area")
+    private String area;
+
+    @SerializedName("address")
+    private String address;
+
+    @SerializedName("image")
+    private String image;
+
+
+    public String getName() {
+        return name;
+    }
+
+    public String getInfo() {
+        return info;
+    }
+
+    public String getCost() {
+        return cost;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public void setInfo(String info) {
+        this.info = info;
+    }
+
+    public void setCost(String cost) {
+        this.cost = cost;
+    }
+
+    public String getPhone() {
+        return phone;
+    }
+
+    public void setPhone(String phone) {
+        this.phone = phone;
+    }
+
+    public int getMetr() {
+        return metr;
+    }
+
+    public void setMetr(int metr) {
+        this.metr = metr;
+    }
+
+    public String getRahn() {
+        return rahn;
+    }
+
+    public void setRahn(String rahn) {
+        this.rahn = rahn;
+    }
+
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
+
+    public String getArea() {
+        return area;
+    }
+
+    public void setArea(String area) {
+        this.area = area;
+    }
+
+    public String getAddress() {
+        return address;
+    }
+
+    public void setAddress(String address) {
+        this.address = address;
+    }
+
+    public String getImage() {
+        return image;
+    }
+}
